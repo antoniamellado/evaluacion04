@@ -1,140 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script src="https://getbootstrap.com/docs/5.3/assets/js/color-modes.js"></script>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="author" content="ANTONIA MELLADO" />
-    <title>ANTONIA MELLADO</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://getbootstrap.com/docs/5.3/examples/album/album.css"
-      rel="stylesheet"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
-    <link href="style.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg w-100 position-fixed">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav w-100 justify-content-around">
-            <li class="nav-item">
-              <a class="nav-link" href="/index.html">inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about.html">sobre mí</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/work.html">trabajos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact.html">contacto</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- trabajo 1 -->
-    <div
-      class="center flex-column"
-      style="height: 100vh; width: 100vw; padding: 10vh 7vw"
-    >
-      <div class="w-100 flex-column">
-        <span class="position-absolute trabajo-numero">0.1</span>
-        <h3>libro Beto y Bella</h3>
-        <p>rediseño de portada y encuadernación artesanal</p>
-      </div>
-      <div
-        id="carousel-beto-bella"
-        class="carousel slide w-50 my-5"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="beto.png" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="beto2.png" class="d-block w-100" alt="..." />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carousel-beto-bella"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carousel-beto-bella"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+<head>
+  <script src="https://getbootstrap.com/docs/5.3/assets/js/color-modes.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="author" content="ANTONIA MELLADO" />
+  <title>ANTONIA MELLADO</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link href="https://getbootstrap.com/docs/5.3/examples/album/album.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg w-100 position-fixed">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-100 justify-content-around">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./work.html">trabajos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">contacto</a>
+          </li>
+        </ul>
       </div>
     </div>
-
-    <!-- trabajo 2 -->
-    <div
-      class="center flex-column"
-      style="height: 100vh; width: 100vw; padding: 10vh 7vw"
-    >
-      <div class="w-100 flex-column">
-        <span class="position-absolute trabajo-numero">0.1</span>
-        <h3>app kokoro</h3>
-        <p>plataforma de contención emocional para estudiantes</p>
-      </div>
-      <div
-        id="carousel-kokoro"
-        class="carousel slide w-50 my-5"
-        data-bs-ride="#carousel-kokoro"
-        data-bs-target="#carousel-kokoro"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="koko.png" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="koko2.png" class="d-block w-100" alt="..." />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carousel-kokoro"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carousel-kokoro"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+  </nav>
+  <!-- trabajo 1 -->
+  <div class="center flex-column" style="height: 100vh; width: 100vw; padding: 20vh 7vw">
+    <div class="w-100 flex-column">
+      <span class="position-absolute trabajo-numero">0.1</span>
+      <h3>libro Beto y Bella</h3>
+      <p>rediseño de portada y encuadernación artesanal</p>
     </div>
-  </body>
+    <div id="carousel-beto-bella" class="carousel slide w-50 mt-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="beto.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="beto2.png" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-beto-bella" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-beto-bella" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- trabajo 2 -->
+  <div class="center flex-column" style="height: 100vh; width: 100vw; padding: 10vh 7vw">
+    <div class="w-100 flex-column">
+      <span class="position-absolute trabajo-numero">0.2</span>
+      <h3>app kokoro</h3>
+      <p>plataforma de contención emocional para estudiantes</p>
+    </div>
+    <div id="carousel-kokoro" class="carousel slide w-50 my-5" data-bs-ride="#carousel-kokoro"
+      data-bs-target="#carousel-kokoro">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="koko.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="koko2.png" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-kokoro" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-kokoro" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</body>
+
 </html>
